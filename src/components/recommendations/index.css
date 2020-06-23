@@ -1,0 +1,39 @@
+.recommendations .item {
+  margin-bottom: 30px;
+}
+
+.recommendations .item:last-child {
+  margin-bottom: 0;
+}
+
+.recommendations .item .quote {
+  color: #666;
+  font-size: 16px;
+  border-left: 5px solid #9fdeb7;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+}
+
+.recommendations .item .quote p {
+  margin-bottom: 0;
+}
+
+.recommendations .item .quote .svg-inline--fa {
+  color: #79d19a;
+  margin-right: 15px;
+}
+
+.recommendations .item .source {
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.recommendations .item .source .name {
+  color: #939ea9;
+  font-weight: 600;
+}
+
+.recommendations .item .source .title {
+  color: #999;
+}

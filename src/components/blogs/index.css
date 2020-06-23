@@ -1,0 +1,18 @@
+.blogs .item {
+  margin-bottom: 30px;
+}
+
+.blogs .item .title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.blogs .item .title a {
+  color: #778492;
+}
+
+.blogs .item .title a:hover {
+  color: #5f6b77;
+}

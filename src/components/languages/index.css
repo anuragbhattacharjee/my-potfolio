@@ -1,0 +1,19 @@
+.languages .item {
+  margin-bottom: 15px;
+}
+
+.languages .item .title {
+  color: #778492;
+}
+
+.languages .item .level {
+  color: #999;
+}
+
+.languages .item:last-child {
+  margin-bottom: 0;
+}
+
+.languages .item .svg-inline--fa {
+  color: #79d19a;
+}
