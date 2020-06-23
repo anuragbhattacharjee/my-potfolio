@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import storage from "local-storage-fallback";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
-import style from "styled-theming";
 
-import useTheme from "./components/utils/useTheme";
-import ToggleMode from "./components/common/toggleMode";
+// For dark mode
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./services/theme";
+// import { GlobalStyle } from "./services/global";
 
 import Navbar from "./components/navbar/index";
 import LatestProjects from "./components/latestProjects";
@@ -20,34 +19,11 @@ import Languages from "./components/languages";
 import Blogs from "./components/blogs";
 import Entertainments from "./components/entertainments";
 
-// const getBackground = style("mode", {
-//   light: "#EEE",
-//   dark: "#111",
-// });
-
-// const getForeground = style("mode", {
-//   light: "#111",
-//   dark: "#EEE",
-// });
-
-// const getFontSize = style("textZoom", {
-//   normal: "1em",
-//   magnify: "1.2em",
-// });
-
-// const GlobalStyle = createGlobalStyle`
-// body {
-//   background-color: ${getBackground};
-//   color: ${getForeground};
-//   font-size: ${getFontSize}
-// }
-// `;
-
 function App() {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <>
         {/* <GlobalStyle /> */}
         <div className="App">
