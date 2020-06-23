@@ -4,7 +4,7 @@ import "./App.css";
 // For dark mode
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./services/theme";
-// import { GlobalStyle } from "./services/global";
+import { GlobalStyle } from "./services/global";
 
 import Navbar from "./components/navbar/index";
 import LatestProjects from "./components/latestProjects";
@@ -20,17 +20,27 @@ import Blogs from "./components/blogs";
 import Entertainments from "./components/entertainments";
 
 function App() {
-  // const theme = useTheme();
+  const [theme, setTheme] = useState("dark");
+
+  // The function that toggles between themes
+  const toggleTheme = () => {
+    // if the theme is not light, then set it to dark
+    if (theme === "light") {
+      setTheme("dark");
+      // otherwise, it should be light
+    } else {
+      setTheme("light");
+    }
+  };
 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
-        {/* <GlobalStyle /> */}
+        <GlobalStyle />
         <div className="App">
           <header className="header text-center">
-            <h1 class="blog-name pt-lg-4 mb-0">Anurag Bhattacharjee</h1>
-            <Navbar />
-            {/* <ToggleMode /> */}
+            <h1 className="blog-name pt-lg-4 mb-0">Anurag Bhattacharjee</h1>
+            <Navbar theme={theme} onToggleTheme={toggleTheme} />
           </header>
           <div className="main-wrapper">
             <div className="container-fluid sections-wrapper">
@@ -172,18 +182,14 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* <footer className="footer">
+              <div className="container text-center">
+                <small className="copyright">
+                  Developed by Anurag Bhattacharjee
+                </small>
+              </div>
+            </footer> */}
           </div>
-          <footer class="footer">
-            <div class="container text-center">
-              <small class="copyright">
-                Designed with <i class="fas fa-heart"></i> by{" "}
-                <a href="https://themes.3rdwavemedia.com" target="_blank">
-                  Xiaoying Riley
-                </a>{" "}
-                for developers
-              </small>
-            </div>
-          </footer>
         </div>
       </>
     </ThemeProvider>

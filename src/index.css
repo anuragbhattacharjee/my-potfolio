@@ -10,11 +10,11 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     159deg,
     rgba(37, 37, 50, 0.98) 0%,
     rgba(35, 35, 45, 0.98) 100%
-  );
+  ); */
   background-image: linear-gradient(
     159deg,
     rgba(37, 37, 50, 0.98) 0%,
@@ -29,7 +29,7 @@ body {
   background-origin: initial;
   background-clip: initial;
   background-color: initial;
-  color: #fafafc;
+  /* color: #fafafc; */
   margin: 0;
   font-family: "MuseoModerno";
   font-size: 1rem;
@@ -44,6 +44,10 @@ hr {
   overflow: visible;
 }
 
+a {
+  color: #66cb8c;
+  font-weight: bold;
+}
 a:hover {
   color: #ffc107 !important;
   text-decoration: underline;

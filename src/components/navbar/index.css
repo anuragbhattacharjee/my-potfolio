@@ -5,7 +5,6 @@
   padding-top: 0.5rem;
   color: #007bff;
 }
-
 .btn-primary:hover {
   background: rgba(0, 0, 0, 0.4);
   border-color: transparent;
@@ -14,6 +13,7 @@
 .navbar {
   padding: 2rem 1rem;
 }
+
 .navbar-dark .navbar-toggler {
   border-radius: 2px;
   -webkit-opacity: 0.8;
@@ -22,7 +22,6 @@
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 0.25rem 0.6rem;
 }
-
 .navbar-dark .navbar-toggler:hover {
   -webkit-opacity: 1;
   -moz-opacity: 1;
@@ -31,22 +30,25 @@
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.nav-item {
+
+.navbar-nav .nav-item {
   font-weight: bold;
 }
-.nav-item.active .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+.navbar-nav .nav-item.active .nav-link {
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: #dad8c3fa;
 }
-.nav-item.active .nav-link:hover {
+.navbar-nav .nav-item.active .nav-link:hover {
   text-decoration: none;
 }
-.nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+.navbar-nav .nav-item .nav-link {
+  color: #66cb8c;
 }
-.nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover {
   text-decoration: underline;
   color: rgba(0, 0, 0, 0.6);
 }
+
 .profile-section .profile-image {
   max-width: 160px;
 }

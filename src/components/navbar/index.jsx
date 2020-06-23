@@ -2,11 +2,15 @@ import React from "react";
 import anurag from "./anurag.jpg";
 import "./index.css";
 
+import Toggle from "../toggle";
+
 const Navbar = (props) => {
+  const { theme, onToggleTheme } = props;
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navigation"
@@ -14,7 +18,7 @@ const Navbar = (props) => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div id="navigation" className="collapse navbar-collapse flex-column">
@@ -25,7 +29,7 @@ const Navbar = (props) => {
             alt="anurag"
           />
 
-          <div class="bio mb-3">Hi, my name is Anurag Bhattacharjee.</div>
+          {/* <div className="blog-name pt-lg-4 mb-0">Hi, my name is Anurag Bhattacharjee.</div> */}
           <br />
 
           <ul className="social-list list-inline py-3 mx-auto">
@@ -83,13 +87,7 @@ const Navbar = (props) => {
         </ul>
 
         <div className="my-2 my-md-3">
-          <a
-            className="btn btn-primary"
-            href="https://themes.3rdwavemedia.com/"
-            target="_blank"
-          >
-            Get in Touch
-          </a>
+          <Toggle theme={theme} toggleTheme={onToggleTheme} />
         </div>
       </div>
     </nav>
