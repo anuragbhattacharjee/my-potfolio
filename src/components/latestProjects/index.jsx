@@ -48,7 +48,7 @@ const LatestProjects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fa fa-thumbs-up"></i> Back my project
+          <i className="fa fa-star"></i> Star my project
         </a>
       </div>
       <hr className="divider" />
@@ -261,8 +261,7 @@ const LatestProjects = () => {
           </p>
         </div>
         <a
-          className="btn btn-cta-secondary"
-          href="#"
+          href="https://github.com/anuragbhattacharjee"
           target="_blank"
           rel="noopener noreferrer"
         >

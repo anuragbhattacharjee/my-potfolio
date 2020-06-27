@@ -18,6 +18,7 @@ import Education from "./components/education";
 import Languages from "./components/languages";
 import Blogs from "./components/blogs";
 import Entertainments from "./components/entertainments";
+import Credits from "./components/credits";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -102,7 +103,7 @@ function App() {
 
                   <aside className="recommendations aside section">
                     <div className="section-inner shadow-sm rounded">
-                      <h2 className="heading">Testimonials</h2>
+                      <h2 className="heading">Recommendations</h2>
                       <Recommendations />
                     </div>
                   </aside>
@@ -129,7 +130,7 @@ function App() {
 
                   <aside className="entertainment music aside section">
                     <div className="section-inner shadow-sm rounded">
-                      <h2 className="heading">Favourite coding music</h2>
+                      <h2 className="heading">Problem Solving</h2>
                       <Entertainments />
                     </div>
                   </aside>
@@ -137,46 +138,7 @@ function App() {
                   <aside className="credits aside section">
                     <div className="section-inner shadow-sm rounded">
                       <h2 className="heading">Credits</h2>
-                      <div className="content">
-                        <ul className="list-unstyled pb-2">
-                          <li>
-                            <a href="https://getbootstrap.com/" target="_blank">
-                              <i className="fa fa-external-link-alt"></i>
-                              Bootstrap
-                            </a>
-                          </li>
-                        </ul>
-
-                        <hr />
-
-                        <p className="pt-2">
-                          This Bootstrap 4 portfolio template is handcrafted by
-                          UX designer{" "}
-                          <a
-                            href="https://twitter.com/3rdwave_themes"
-                            target="_blank"
-                          >
-                            Xiaoying Riley
-                          </a>{" "}
-                          at{" "}
-                          <a
-                            href="https://themes.3rdwavemedia.com/"
-                            target="_blank"
-                          >
-                            3rd Wave Media
-                          </a>{" "}
-                          for developers and is <strong>FREE</strong> as long as
-                          you keep the footer attribution link.
-                        </p>
-
-                        <a
-                          className="btn btn-cta-primary btn-download"
-                          href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/"
-                          target="_blank"
-                        >
-                          <i className="fa fa-download"></i> I want to download
-                        </a>
-                      </div>
+                      <Credits />
                     </div>
                   </aside>
                 </div>

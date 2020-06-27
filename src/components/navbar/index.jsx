@@ -29,40 +29,40 @@ const Navbar = (props) => {
             alt="anurag"
           />
 
-          {/* <div className="blog-name pt-lg-4 mb-0">Hi, my name is Anurag Bhattacharjee.</div> */}
+          <h2 className="pt-lg-4 mb-0">Anurag Bhattacharjee.</h2>
           <br />
 
           <ul className="social-list list-inline py-3 mx-auto">
             <li className="list-inline-item">
               <a href="https://twitter.com/AnuragOn2">
-                <i className="fa fa-twitter fa-fw"></i>
+                <i className="fab fa-twitter fa-fw"></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="https://www.linkedin.com/in/anuragbhattacharjee/">
-                <i className="fa fa-linkedin fa-fw"></i>
+                <i className="fab fa-linkedin fa-fw"></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="https://github.com/anuragbhattacharjee">
-                <i className="fa fa-github-alt fa-fw"></i>
+                <i className="fab fa-github-alt fa-fw"></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="https://stackoverflow.com/users/2149373/anurag">
-                <i className="fa fa-stack-overflow fa-fw"></i>
+                <i className="fab fa-stack-overflow fa-fw"></i>
               </a>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <a href="https://www.facebook.com/AnuragOn2">
-                <i className="fa fa-facebook fa-fw"></i>
+                <i className="fab fa-facebook fa-fw"></i>
               </a>
             </li>
             <li className="list-inline-item">
               <a href="https://www.instagram.com/AnuragOn2">
-                <i className="fa fa-instagram fa-fw"></i>
+                <i className="fab fa-instagram fa-fw"></i>
               </a>
-            </li>
+            </li> */}
           </ul>
           <hr />
         </div>

@@ -37,3 +37,8 @@
 .recommendations .item .source .title {
   color: #999;
 }
+
+.recommendations .item img {
+  border-radius: 50%;
+  width: 90px;
+}

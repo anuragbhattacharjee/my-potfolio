@@ -6,6 +6,8 @@ export const lightTheme = {
   header: "#f5f5f5",
   sectionBackground: "#fff",
   navLinkActive: `rgba(0, 0, 0, 0.5)`,
+  hrBorder: `1px solid rgba(0, 0, 0, 0.1)`,
+  tagBeforeBackground: "#fff",
 };
 
 export const darkTheme = {
@@ -24,4 +26,6 @@ export const darkTheme = {
   )`,
   sectionBackground: `linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%)`,
   navLinkActive: "#dad8c3fa",
+  hrBorder: "1px solid #93939e",
+  tagBeforeBackground: "#2a2e31",
 };

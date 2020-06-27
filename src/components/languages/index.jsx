@@ -7,7 +7,7 @@ const Languages = () => {
       <ul className="list-unstyled">
         <li className="item">
           <span className="title">
-            <strong>English:</strong>
+            <strong>Bengali: </strong>
           </span>
           <span className="level">
             Native Speaker <br className="visible-xs" />
@@ -18,10 +18,10 @@ const Languages = () => {
         </li>
         <li className="item">
           <span className="title">
-            <strong>Spanish:</strong>
+            <strong>English: </strong>
           </span>
           <span className="level">
-            Professional Proficiency <br className="visible-sm visible-xs" />
+            Advanced User <br className="visible-sm visible-xs" />
             <i className="fa fa-star"></i> <i className="fa fa-star"></i>{" "}
             <i className="fa fa-star"></i> <i className="fa fa-star-half"></i>
           </span>
