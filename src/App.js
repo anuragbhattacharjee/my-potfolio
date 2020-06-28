@@ -71,7 +71,7 @@ function App() {
 
                   <section className="latest section">
                     <div className="section-inner shadow-sm rounded">
-                      <h2 className="heading">Latest Projects</h2>
+                      <h2 className="heading">Projects I built for myself</h2>
                       <LatestProjects />
                     </div>
                   </section>

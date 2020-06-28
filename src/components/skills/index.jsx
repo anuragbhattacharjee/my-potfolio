@@ -7,7 +7,7 @@ const skills = [
   { id: 2, title: "Laravel", level: "Intermediate", completed: 70 },
   { id: 3, title: "JavaScript", level: "Advanced", completed: 90 },
   { id: 3, title: "Node.js", level: "Intermediate", completed: 70 },
-  { id: 4, title: "VUE.js", level: "Advanced", completed: 80 },
+  { id: 4, title: "Vue.js", level: "Advanced", completed: 80 },
   { id: 5, title: "React", level: "Intermediate", completed: 60 },
   { id: 6, title: "MySql", level: "Introductory", completed: 60 },
   { id: 7, title: "MongoDB", level: "Introductory", completed: 60 },

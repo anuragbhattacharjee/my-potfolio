@@ -70,18 +70,18 @@ const Navbar = (props) => {
         <ul className="navbar-nav flex-column text-left">
           <li className="nav-item active">
             <a className="nav-link" href="index.html">
-              <i className="fa fa-home fa-fw mr-2"></i>Blog Home{" "}
+              <i className="fa fa-home fa-fw mr-2"></i>Home{" "}
               <span className="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="blog-post.html">
-              <i className="fa fa-bookmark fa-fw mr-2"></i>Blog Post
+            <a className="nav-link" href="/researches.html">
+              <i className="fa fa-bookmark fa-fw mr-2"></i>Researches
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="about.html">
-              <i className="fa fa-user fa-fw mr-2"></i>About Me
+            <a className="nav-link" href="/resume.html">
+              <i className="fa fa-user fa-fw mr-2"></i>Resume
             </a>
           </li>
         </ul>

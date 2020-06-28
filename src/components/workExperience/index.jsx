@@ -30,14 +30,13 @@ const WorkExperience = () => {
           entity and intents. I developed a technique to detect multi word
           product names as entity. I have also worked on detecting entity and
           intents from a speech. <br />
-          Other than that I have also worked on buiulding the dashboard of the
+          Other than that I have also worked on building the dashboard of the
           platform which is built on laravel and Vue.js. My latest work is
-          NinjaCommerce which is an uCommerce like experience inside your
-          messenger.
+          NinjaCommerce which is an uCommerce like experience inside messenger.
         </p>
         <ul className="tags">
           <li className="tag">Python</li>
-          <li className="tag">FLASK</li>
+          <li className="tag">Flask</li>
           <li className="tag">Laravel</li>
           <li className="tag">MySQL</li>
           <li className="tag">Vue.js</li>
@@ -56,7 +55,7 @@ const WorkExperience = () => {
               IQVIA
             </a>
           </span>{" "}
-          <span className="year">(2014 - 2018)</span>
+          <span className="year">(2015 - 2018)</span>
         </h3>
         <p>
           IQVIA, the global leader in Information Management and Consulting
@@ -95,7 +94,7 @@ const WorkExperience = () => {
               BRAC IT
             </a>
           </span>{" "}
-          <span className="year">(2014)</span>
+          <span className="year">(2014 - 2015)</span>
         </h3>
         <p>
           I started my career as a software engineer in BRAC IT Limited. BRAC

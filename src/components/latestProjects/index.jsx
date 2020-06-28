@@ -1,5 +1,10 @@
 import React from "react";
-import projectImage from "./project.png";
+import projectImage from "./images/webpod.png";
+import weddingImage from "./images/wedding.png";
+import flaskImage from "./images/flask.jpg";
+import reactNativeImage from "./images/react-native.png";
+import translateImage from "./images/translate.jpg";
+import camScannerImage from "./images/camscan.jpg";
 import "./index.css";
 
 const LatestProjects = () => {
@@ -7,11 +12,7 @@ const LatestProjects = () => {
     <div className="content">
       <div className="item featured text-center">
         <div className="featured-image has-ribbon">
-          <a
-            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={projectImage}>
             <img
               className="img-fluid project-image rounded shadow-sm"
               src={projectImage}
@@ -25,26 +26,46 @@ const LatestProjects = () => {
 
         <h3 className="title mb-3">
           <a
-            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
+            href="http://webpod.anuragbhattacharjee.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Launch - The perfect Bootstrap 4 template for SaaS products
+            WebPod by Anurag
           </a>
         </h3>
 
-        <div className="desc text-left">
+        <div className="desc text-justify">
           <p>
-            You can promote your main project here. Suspendisse in tellus dolor.
-            Vivamus a tortor eu turpis pharetra consequat quis non metus.
-            Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt
-            enim, eget iaculis ante dolor non turpis. Ut enim ad minima veniam,
-            quis nostrum exercitationem ullam corporis suscipit laboriosam.
+            Covid-19 has changed a lot of practices. We are getting used to work
+            from home. Whereas it's very convenient in some ways but it's also
+            very easy to get distracted when working alone. Specially when a
+            addiction like social media is always poking us to keep looking at
+            it. <br />
+            So, to increase productivity, I have been practicing to detox myself
+            from social media platforms. After a few weeks of practicing it I
+            don't feel the urge to look at social medias any more. Rather it
+            seems like a burden and I have seen how much productive time I could
+            manage by just opracticing some simple rules. I have also written a
+            blog on it.{" "}
+            <a
+              href="https://medium.com/@anuragbhattacharjee/social-media-multitasking-is-affecting-our-brain-976f98f72f2e"
+              target="_blank"
+            >
+              Social media & multitasking is affecting our brain 🧠
+            </a>
+            {"   "}.
+            <br />
+            Though, I could easily avoid all the nuisense in the social medias,
+            one thing I couldn't avoid is going to Youtube to listen music while
+            coding. And Youtube also uses the same techniques to keeps it's
+            users attracrted to it's platform and keeps suggesting all the
+            lucrative videos that I would like to watch. And it's a productivity
+            killer. So I built a WebPod which will search music for me and play
+            without any distraction. I mean Why Noy? <span role="img">🤷🏻‍♂️</span>
           </p>
         </div>
         <a
-          className="btn btn-cta-secondary"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/"
+          href="https://github.com/anuragbhattacharjee/webpod"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -52,43 +73,45 @@ const LatestProjects = () => {
         </a>
       </div>
       <hr className="divider" />
+
       <div className="item row">
         <a
           className="col-md-4 col-12"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
+          href={weddingImage}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="img-fluid project-image rounded shadow-sm"
-            src="assets/images/projects/project-1.png"
-            alt="project name"
+            src={weddingImage}
+            alt="SwarnAnurag Wedding"
           />
         </a>
         <div className="desc col-md-8 col-12">
           <h3 className="title">
             <a
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
+              href="https://anuragbhattacharjee.github.io/swarnanurag-wedding"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CoderPro - Bootstrap 4 Startup Template For Software Projects
+              My Wedding Invitation Website
             </a>
           </h3>
-          <p className="mb-2">
-            You can put one of your secondary projects here. Suspendisse in
-            tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non
-            metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui
-            tincidunt enim, eget iaculis ante dolor non turpis.
+          <p className="mb-2 text-justify">
+            I made a website to countdown the wedding day and give details about
+            our wedding venue and timing. This website also includes the story
+            of how we met and a timeline of our memorable dates. I also added
+            some memorable photos of our family first meeting each other.{" "}
+            <span role="img">😻</span>
           </p>
           <p>
             <a
               className="more-link"
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-4-startup-template-for-software-projects/"
+              href="https://github.com/anuragbhattacharjee/swarnanurag-wedding"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-external-link-alt"></i>Find out more
+              <i className="fa fa-external-link-alt"></i>See in github
             </a>
           </p>
         </div>
@@ -97,40 +120,43 @@ const LatestProjects = () => {
       <div className="item row">
         <a
           className="col-md-4 col-12"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
+          href={flaskImage}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="img-fluid project-image rounded shadow-sm"
-            src="assets/images/projects/project-2.png"
-            alt="project name"
+            src={flaskImage}
+            alt="Flask Structure"
           />
         </a>
         <div className="desc col-md-8 col-12">
           <h3 className="title">
             <a
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
+              href="https://github.com/anuragbhattacharjee/flask-structure"
               target="_blank"
               rel="noopener noreferrer"
             >
-              DevCard - Bootstrap 4 Portfolio Template for Software Developers
+              Flask Project Skeleton
             </a>
           </h3>
-          <p className="mb-2">
-            You can put one of your secondary projects here. Suspendisse in
-            tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non
-            metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui
-            tincidunt enim, eget iaculis ante dolor non turpis.
+          <p className="mb-2 text-justify">
+            While developing the NLU microservice for my current job in
+            ChatLeads I did feel that there is no well stublished structure for
+            maintaining Flask projects. One obvious reason is that usually big
+            projects in python are usually made in Django. But when the project
+            grew back there was no option for me to go back and rebuilt it. So I
+            built a structure that can be used as a boiler plate of any Flask
+            project.
           </p>
           <p>
             <a
               className="more-link"
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-4-vcard-portfolio-template-for-software-developers/"
+              href="https://github.com/anuragbhattacharjee/flask-structure"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-external-link-alt"></i>Find out more
+              <i className="fa fa-external-link-alt"></i>See in github
             </a>
           </p>
         </div>
@@ -139,41 +165,49 @@ const LatestProjects = () => {
       <div className="item row">
         <a
           className="col-md-4 col-12"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
+          href={reactNativeImage}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="img-fluid project-image rounded shadow-sm"
-            src="assets/images/projects/project-3.png"
-            alt="project name"
+            src={reactNativeImage}
+            alt="React Native Structure"
           />
         </a>
         <div className="desc col-md-8 col-12">
           <h3 className="title">
             <a
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
+              href="https://github.com/anuragbhattacharjee/rn_seed_navigation_login"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instance - Bootstrap 4 Portfolio Template for Aspiring Full Stack
-              Developers
+              React Native Boiler-plate
             </a>
           </h3>
-          <p className="mb-2">
-            You can put one of your secondary projects here. Suspendisse in
-            tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non
-            metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui
-            tincidunt enim, eget iaculis ante dolor non turpis.
+          <p className="mb-2 text-justify">
+            React Native Boilerplate with authentication screens and app screens
+            with switch navigation and stack navigation This can be a starting
+            point for a react native application. From this project you can
+            learn:
           </p>
+          <ol>
+            <li>How to implement SafeAreaView</li>
+            <li>How to design the screen with Flex</li>
+            <li>
+              How to implement different Navigators and how to customise them
+            </li>
+            <li>How to organise an RN App in components & how to reuse them</li>
+            <li>How to pass props and how to manage states</li>
+          </ol>
           <p>
             <a
               className="more-link"
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/instance-bootstrap-portfolio-theme-for-developers/"
+              href="https://github.com/anuragbhattacharjee/rn_seed_navigation_login"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-external-link-alt"></i>Find out more
+              <i className="fa fa-external-link-alt"></i>See in github
             </a>
           </p>
         </div>
@@ -182,92 +216,90 @@ const LatestProjects = () => {
       <div className="item row">
         <a
           className="col-md-4 col-12"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
+          href={translateImage}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="img-fluid project-image rounded shadow-sm"
-            src="assets/images/projects/project-4.png"
-            alt="project name"
+            src={translateImage}
+            alt="Flask Translator"
           />
         </a>
         <div className="desc col-md-8 col-12">
           <h3 className="title">
             <a
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
+              href="https://github.com/anuragbhattacharjee/google_translator"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Nova Pro - Bootstrap 4 Template for Mobile Startups
+              Flask Translator
             </a>
           </h3>
-          <p className="mb-2">
-            You can put one of your secondary projects here. Suspendisse in
-            tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non
-            metus.
+          <p className="mb-2 text-justify">
+            Python project for translating a text list in desired language using
+            google API
           </p>
           <p>
             <a
               className="more-link"
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/"
+              href="https://github.com/anuragbhattacharjee/google_translator"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-external-link-alt"></i>Find out more
+              <i className="fa fa-external-link-alt"></i>See in github
             </a>
           </p>
         </div>
       </div>
+
       <div className="item row">
         <a
           className="col-md-4 col-12"
-          href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
+          href={camScannerImage}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
             className="img-fluid project-image rounded shadow-sm"
-            src="assets/images/projects/project-5.png"
-            alt="project name"
+            src={camScannerImage}
+            alt="Flask Translator"
           />
         </a>
         <div className="desc col-md-8 col-12">
           <h3 className="title">
             <a
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
+              href="https://github.com/anuragbhattacharjee/camscanner-seed"
               target="_blank"
               rel="noopener noreferrer"
             >
-              DevStudio - Bootstrap 4 Template for WebDev Agencies and Freelance
-              Developers
+              Ionic App to Scan Text using Camera
             </a>
           </h3>
-          <p className="mb-2">
-            {" "}
-            You can put one of your secondary projects here. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-            ullamcorper ultricies nisi.
+          <p className="mb-2 text-justify">
+            Python project for translating a text list in desired language using
+            google API
           </p>
           <p>
             <a
               className="more-link"
-              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/"
+              href="https://github.com/anuragbhattacharjee/camscanner-seed"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa fa-external-link-alt"></i>Find out more
+              <i className="fa fa-external-link-alt"></i>See in github
             </a>
           </p>
         </div>
-        <a
-          href="https://github.com/anuragbhattacharjee"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          More on GitHub <i className="fa fa-chevron-right pt-1"></i>
-        </a>
       </div>
+
+      <a
+        href="https://github.com/anuragbhattacharjee"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        More on GitHub <i className="fa fa-chevron-right pt-1"></i>
+      </a>
     </div>
   );
 };

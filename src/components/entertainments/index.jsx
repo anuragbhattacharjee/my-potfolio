@@ -7,6 +7,26 @@ const Entertainments = () => {
         <li>
           <i className="fab fa-hackerrank"></i>{" "}
           <a
+            href="https://www.codewars.com/users/anuragbhattacharjee"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codewars @anuragbhattacharjee
+          </a>
+        </li>
+        <li>
+          <i className="fab fa-hackerrank"></i>{" "}
+          <a
+            href="https://www.hackerrank.com/anurag07061"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HackerRank @anurag07061
+          </a>
+        </li>
+        <li>
+          <i className="fab fa-hackerrank"></i>{" "}
+          <a
             href="https://www.hackerrank.com/anurag07061"
             target="_blank"
             rel="noopener noreferrer"

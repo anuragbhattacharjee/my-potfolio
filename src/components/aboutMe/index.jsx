@@ -5,7 +5,7 @@ const AboutMe = () => {
     <div className="content">
       <p>
         I am Anurag, professionally working in software development since 2014.
-        Needless to say, I am loving <span role="img">😎 </span>what I am doing
+        Needless to say, I am loving <span role="img">😎</span> what I am doing
         as a career. <br />I feel lucky to get an opportunity to apply my
         theoritical knowledge from my thesis ({" "}
         <a href="/assets/thesis.pdf" target="_blank" rel="noopener noreferrer">
