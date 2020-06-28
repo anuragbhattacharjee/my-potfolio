@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+// import axios from "axios";
 import _ from "lodash";
 import "./index.css";
 import blogAltImage from "./blog-alt-image.jpeg";
@@ -22,7 +22,6 @@ class Blogs extends Component {
   }
 
   imageLink = (imageId) => {
-    console.log(imageId);
     return imageId !== ""
       ? `https://miro.medium.com/max/796/${imageId}`
       : blogAltImage;

@@ -8,7 +8,7 @@ const Credits = () => {
           Designed and Developed in{" "}
           <span style={{ color: "#61dafb" }}>
             {" "}
-            <i class="fab fa-react"></i> React
+            <i className="fab fa-react"></i> React
           </span>{" "}
           <br />
           by Anurag Bhattacharjee
@@ -16,7 +16,11 @@ const Credits = () => {
         <hr />
         <li>
           Design Inspiration:
-          <a href="https://twitter.com/3rdwave_themes" target="_blank">
+          <a
+            href="https://twitter.com/3rdwave_themes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             Xiaoying Riley
           </a>
@@ -27,12 +31,17 @@ const Credits = () => {
           <a
             href="https://www.flaticon.com/authors/pixel-perfect"
             target="_blank"
+            rel="noopener noreferrer"
           >
             {" "}
             Pixel perfect
           </a>{" "}
           from{" "}
-          <a href="https://www.flaticon.com/" target="_blank">
+          <a
+            href="https://www.flaticon.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             www.flaticon.com
           </a>
           "

@@ -15,7 +15,7 @@ const WorkExperience = () => {
             >
               ChatLeads
             </a>
-          </span>
+          </span>{" "}
           <span className="year">(2018 - Present)</span>
         </h3>
         <p>
@@ -75,9 +75,9 @@ const WorkExperience = () => {
         </ul>
         {/* <ul className="list-inline dev-icons">
           <li className="list-inline-item" title="C#">
-            <i class="fab fa-python"></i>
-            <i class="fab fa-python"></i>
-            <i class="fab fa-python"></i>
+            <i className="fab fa-python"></i>
+            <i className="fab fa-python"></i>
+            <i className="fab fa-python"></i>
           </li>
         </ul> */}
       </div>

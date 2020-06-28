@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import ProgressBar from "../utils/progress-bar";
+
 const skills = [
   { id: 1, title: "Python & Flask", level: "Intermediate", completed: 70 },
   { id: 2, title: "C#", level: "Intermediate", completed: 70 },
@@ -25,25 +25,25 @@ const Skills = () => {
     <div className="content">
       <p className="intro">Skills that I love to work on.</p>
       <p>
-        Server Side: <i class="fab fa-python"></i>{" "}
-        <i class="fab fa-laravel"></i> <span>C#</span>{" "}
-        <i class="fab fa-node-js"></i>
+        Server Side: <i className="fab fa-python"></i>{" "}
+        <i className="fab fa-laravel"></i> <span>C#</span>{" "}
+        <i className="fab fa-node-js"></i>
       </p>
       <p>
-        Front End: <i class="fab fa-vuejs"></i> <i class="fab fa-react"></i>{" "}
-        <i class="fab fa-js-square"></i>
+        Front End: <i className="fab fa-vuejs"></i>{" "}
+        <i className="fab fa-react"></i> <i className="fab fa-js-square"></i>
       </p>
       <p>
-        DB <i class="fas fa-database"></i> : <span>MySql</span>,{" "}
+        DB <i className="fas fa-database"></i> : <span>MySql</span>,{" "}
         <span>MongoDB</span>
       </p>
       <p>
-        OS: <i class="fab fa-linux"></i> <i class="fab fa-apple"></i>{" "}
-        <i class="fab fa-windows"></i>
+        OS: <i className="fab fa-linux"></i> <i className="fab fa-apple"></i>{" "}
+        <i className="fab fa-windows"></i>
       </p>
       <div className="skillset">
         {skills.map((skill, idx) => (
-          <div className="item">
+          <div className="item" key={idx}>
             <h3 className="level-title">
               {skill.title}
               <span

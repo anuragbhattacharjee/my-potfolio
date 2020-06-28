@@ -49,6 +49,7 @@ header .blog-name {
   .container {
     width: 1360px;
     max-width: inherit;
+    text-align: justify;
   }
 }
 
