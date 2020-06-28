@@ -85,9 +85,10 @@ const Navbar = (props) => {
             </a>
           </li>
         </ul>
-
+        <br />
         <div className="my-2 my-md-3">
           <Toggle theme={theme} toggleTheme={onToggleTheme} />
+          <p>{theme} mode</p>
         </div>
       </div>
     </nav>
