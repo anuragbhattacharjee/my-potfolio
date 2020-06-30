@@ -36,17 +36,16 @@ const LatestProjects = () => {
 
         <div className="desc text-justify">
           <p>
-            Covid-19 has changed a lot of practices. We are getting used to work
-            from home. Whereas it's very convenient in some ways but it's also
-            very easy to get distracted when working alone. Specially when a
-            addiction like social media is always poking us to keep looking at
-            it. <br />
+            Covid-19 has changed a lot of practices. We are getting used to
+            working from home. Whereas it's very convenient in some ways but
+            it's also very easy to get distracted when working alone. Especially
+            when an addiction like social media is always poking us to keep
+            looking at it. <br />
             So, to increase productivity, I have been practicing to detox myself
-            from social media platforms. After a few weeks of practicing it I
-            don't feel the urge to look at social medias any more. Rather it
-            seems like a burden and I have seen how much productive time I could
-            manage by just opracticing some simple rules. I have also written a
-            blog on it.{" "}
+            from social media platforms. After a few weeks, I don't feel the
+            urge to look at social media anymore. Rather it seems like a burden
+            and I am amazed that how much productive time I could manage by just
+            consciously using my time. I have also written a blog on it.{" "}
             <a
               href="https://medium.com/@anuragbhattacharjee/social-media-multitasking-is-affecting-our-brain-976f98f72f2e"
               target="_blank"
@@ -55,13 +54,13 @@ const LatestProjects = () => {
             </a>
             {"   "}.
             <br />
-            Though, I could easily avoid all the nuisense in the social medias,
-            one thing I couldn't avoid is going to Youtube to listen music while
+            Though I could easily avoid all the nuisance in social media, one
+            thing I couldn't avoid is going to Youtube to listen to music while
             coding. And Youtube also uses the same techniques to keeps it's
-            users attracrted to it's platform and keeps suggesting all the
+            users attracted to its platform and keeps suggesting all the
             lucrative videos that I would like to watch. And it's a productivity
             killer. So I built a WebPod which will search music for me and play
-            without any distraction. I mean Why Noy? <span role="img">🤷🏻‍♂️</span>
+            without any distraction. I mean, Why Not? <span role="img">🤷🏻‍♂️</span>
           </p>
         </div>
         <a
@@ -74,6 +73,7 @@ const LatestProjects = () => {
       </div>
       <hr className="divider" />
 
+      {/* My Wedding Invitation Website */}
       <div className="item row">
         <a
           className="col-md-4 col-12"
@@ -117,6 +117,7 @@ const LatestProjects = () => {
         </div>
       </div>
 
+      {/* Flask Project Skeleton */}
       <div className="item row">
         <a
           className="col-md-4 col-12"
@@ -142,11 +143,11 @@ const LatestProjects = () => {
           </h3>
           <p className="mb-2 text-justify">
             While developing the NLU microservice for my current job in
-            ChatLeads I did feel that there is no well stublished structure for
+            ChatLeads I did feel that there is no well-stublished structure for
             maintaining Flask projects. One obvious reason is that usually big
             projects in python are usually made in Django. But when the project
             grew back there was no option for me to go back and rebuilt it. So I
-            built a structure that can be used as a boiler plate of any Flask
+            built a structure that can be used as a boilerplate of any Flask
             project.
           </p>
           <p>
@@ -162,6 +163,7 @@ const LatestProjects = () => {
         </div>
       </div>
 
+      {/* React Native Boilerplate */}
       <div className="item row">
         <a
           className="col-md-4 col-12"
@@ -182,7 +184,7 @@ const LatestProjects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              React Native Boiler-plate
+              React Native Boilerplate
             </a>
           </h3>
           <p className="mb-2 text-justify">
@@ -195,9 +197,9 @@ const LatestProjects = () => {
             <li>How to implement SafeAreaView</li>
             <li>How to design the screen with Flex</li>
             <li>
-              How to implement different Navigators and how to customise them
+              How to implement different Navigators and how to customize them
             </li>
-            <li>How to organise an RN App in components & how to reuse them</li>
+            <li>How to organize an RN App in components & how to reuse them</li>
             <li>How to pass props and how to manage states</li>
           </ol>
           <p>
