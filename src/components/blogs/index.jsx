@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import axios from "axios";
+import axios from "axios";
 import _ from "lodash";
 import "./index.css";
 import blogAltImage from "./blog-alt-image.jpeg";
@@ -12,13 +12,13 @@ class Blogs extends Component {
   };
 
   componentDidMount() {
-    // axios
-    //   .get(`https://medium.com/@anuragbhattacharjee/latest?format=json`)
-    //   .then((res) => {
-    //     const m = res.payload;
-    //     console.log(m);
-    //     this.setState({ m });
-    //   });
+    axios
+      .get(`https://medium.com/@anuragbhattacharjee/latest?format=json`)
+      .then((res) => {
+        const m = res.payload;
+        // console.log(m);
+        this.setState({ m });
+      });
   }
 
   imageLink = (imageId) => {
@@ -29,7 +29,12 @@ class Blogs extends Component {
 
   render() {
     let posts = [];
-    const Posts = { ...medium.payload.references.Post };
+    let Posts = {};
+    if (_.isEmpty(this.m)) {
+      Posts = { ...medium.payload.references.Post };
+    } else {
+      Posts = { ...this.m.payload.references.Post };
+    }
 
     if (!_.isEmpty(medium)) {
       posts = Object.keys(Posts).map((index) => (
