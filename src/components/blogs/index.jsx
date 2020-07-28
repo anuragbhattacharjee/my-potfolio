@@ -13,10 +13,12 @@ class Blogs extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://medium.com/@anuragbhattacharjee/latest?format=json`)
+      .get(
+        `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@anuragbhattacharjee/latest?format=json`
+      )
       .then((res) => {
         const m = res.payload;
-        // console.log(m);
+        console.log(m);
         this.setState({ m });
       });
   }
