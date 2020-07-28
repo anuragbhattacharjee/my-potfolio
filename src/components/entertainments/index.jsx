@@ -5,13 +5,16 @@ const Entertainments = () => {
     <div className="content">
       <ul className="list-unstyled">
         <li>
-          <i className="fab fa-hackerrank"></i>{" "}
           <a
             href="https://www.codewars.com/users/anuragbhattacharjee"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Codewars @anuragbhattacharjee
+            Codewars:
+            <img
+              src="https://www.codewars.com/users/anuragbhattacharjee/badges/micro"
+              alt="@anuragbhattacharjee"
+            ></img>
           </a>
         </li>
         <li>
@@ -21,7 +24,7 @@ const Entertainments = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            HackerRank @anurag07061
+            HackerRank @anuragon2
           </a>
         </li>
         <li>

@@ -1,6 +1,7 @@
 import React from "react";
 import projectImage from "./images/webpod.png";
 import weddingImage from "./images/wedding.png";
+import smilyBotImage from "./images/smily-bot.png";
 import flaskImage from "./images/flask.jpg";
 import reactNativeImage from "./images/react-native.png";
 import translateImage from "./images/translate.jpg";
@@ -72,6 +73,52 @@ const LatestProjects = () => {
         </a>
       </div>
       <hr className="divider" />
+
+      {/* My Wedding Invitation Website */}
+      <div className="item row">
+        <a
+          className="col-md-4 col-12"
+          href={smilyBotImage}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="img-fluid project-image rounded shadow-sm"
+            src={smilyBotImage}
+            alt="Discord NLP Smily Bot "
+          />
+        </a>
+        <div className="desc col-md-8 col-12">
+          <h3 className="title">
+            <a
+              href="https://github.com/anuragbhattacharjee/discord-nlp-smily-bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Deep Learning powered Discord Bot to react with smily{" "}
+              <span role="img" aria-label="smily">
+                😎
+              </span>
+            </a>
+          </h3>
+          <p className="mb-2 text-justify">
+            I have created a discord bot to read messages and detect the
+            sentiment, emotion and sarcasm of the message according to it’s 1.2B
+            twitter trained data and reply with a suitable smily. I have
+            deployed it in my office server to have some fun with it.
+          </p>
+          <p>
+            <a
+              className="more-link"
+              href="https://github.com/anuragbhattacharjee/discord-nlp-smily-bot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-external-link-alt"></i>See in github
+            </a>
+          </p>
+        </div>
+      </div>
 
       {/* My Wedding Invitation Website */}
       <div className="item row">

@@ -11,17 +11,17 @@ class Blogs extends Component {
     baseurl: "https://medium.com/@anuragbhattacharjee/",
   };
 
-  componentDidMount() {
-    axios
-      .get(
-        `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@anuragbhattacharjee/latest?format=json`
-      )
-      .then((res) => {
-        const m = res.payload;
-        console.log(m);
-        this.setState({ m });
-      });
-  }
+  // componentDidMount() {
+  //   axios
+  //     .get(
+  //       `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/@anuragbhattacharjee/latest?format=json`
+  //     )
+  //     .then((res) => {
+  //       const m = res.payload;
+  //       console.log(m);
+  //       this.setState({ m });
+  //     });
+  // }
 
   imageLink = (imageId) => {
     return imageId !== ""
@@ -32,11 +32,13 @@ class Blogs extends Component {
   render() {
     let posts = [];
     let Posts = {};
-    if (_.isEmpty(this.m)) {
-      Posts = { ...medium.payload.references.Post };
-    } else {
-      Posts = { ...this.m.payload.references.Post };
-    }
+    // if (_.isEmpty(this.m)) {
+    //   Posts = { ...medium.payload.references.Post };
+    // } else {
+    //   Posts = { ...this.m.payload.references.Post };
+    // }
+
+    Posts = { ...medium.payload.references.Post };
 
     if (!_.isEmpty(medium)) {
       posts = Object.keys(Posts).map((index) => (
